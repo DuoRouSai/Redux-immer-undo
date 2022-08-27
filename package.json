@@ -1,0 +1,41 @@
+{
+  "name": "redux-immer-undo",
+  "version": "1.0.0",
+  "description": "♻️ higher order reducer to add undo/redo functionality to redux state containers",
+  "main": "dist/redux-immer-undo.umd.js",
+  "module": "dist/redux-immer-undo.es5.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "pre-release": "rollup -c rollup.config.js && standard-version",
+    "release": "git push --follow-tags origin master && npm publish",
+    "semantic-release": "semantic-release"
+  },
+  "author": "duor",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "immer": "^8.0.4",
+    "rollup": "^2.77.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^19.0.5",
+    "standard-version": "^9.5.0"
+  },
+  "peerDependencies": {
+    "immer": "^8.0.0"
+  },
+  "repository": "https://github.com/DuoRouSai/redux-immer-undo.git",
+  "keywords": [
+    "redux",
+    "immer",
+    "undo",
+    "redo"
+  ]
+}
