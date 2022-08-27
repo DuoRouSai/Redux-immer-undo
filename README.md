@@ -9,8 +9,6 @@
 npm  install redux-immer-undo
 ````
 
-
-
 ## Usage
 
 ```js
