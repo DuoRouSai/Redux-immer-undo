@@ -1,9 +1,9 @@
 {
-  "name": "redux-immer-undo",
+  "name": "redux-immer-redo",
   "version": "1.0.0",
   "description": "♻️ higher order reducer to add undo/redo functionality to redux state containers",
-  "main": "dist/redux-immer-undo.umd.js",
-  "module": "dist/redux-immer-undo.es5.js",
+  "main": "dist/redux-immer-redo.umd.js",
+  "module": "dist/redux-immer-redo.es5.js",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "pre-release": "rollup -c rollup.config.js && standard-version",
