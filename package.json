@@ -9,7 +9,7 @@
     "pre-release": "rollup -c rollup.config.js && standard-version",
     "release": "git push --follow-tags origin master && npm publish",
     "semantic-release": "semantic-release",
-    "prepack": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "author": "duor",
   "license": "ISC",
