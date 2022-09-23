@@ -5,11 +5,10 @@
   "main": "dist/redux-immer-redo.umd.js",
   "module": "dist/redux-immer-redo.es5.js",
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js && npm pkg get version",
     "pre-release": "rollup -c rollup.config.js && standard-version",
     "release": "git push --follow-tags origin master && npm publish",
     "semantic-release": "semantic-release",
-    "build": "npm pkg get version",
     "prepack": "npm run build"
   },
   "author": "duor",
